@@ -11,6 +11,7 @@
       --primary: #d32f2f;
       --secondary: #0f172a;
       --accent: #16a34a;
+      --facebook: #1877f2;
     }
     
     /* Full Page Branded Background */
@@ -47,12 +48,20 @@
     h1 { margin: 20px 0 10px 0; font-size: 3.4rem; font-weight: 900; text-shadow: 0 3px 8px rgba(0,0,0,0.8); }
     p.hero-sub { font-size: 1.35rem; color: #f8fafc; max-width: 800px; margin: 0 auto 30px auto; text-shadow: 0 2px 6px rgba(0,0,0,0.8); font-weight: 500; }
     
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
     .call-btn {
       display: inline-block;
-      padding: 22px 45px;
+      padding: 20px 38px;
       background-color: var(--accent);
       color: white;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       text-decoration: none;
       border-radius: 50px;
@@ -62,9 +71,23 @@
 
     .call-btn:hover { transform: scale(1.05); background-color: #15803d; }
 
+    .fb-btn {
+      display: inline-block;
+      padding: 20px 35px;
+      background-color: var(--facebook);
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .fb-btn:hover { transform: scale(1.05); background-color: #166fe5; }
+
     .container { max-width: 1100px; margin: 20px auto 50px auto; padding: 0 20px; }
     
-    /* Translucent Cards for High Legibility over Full-Page Background */
     .card { 
       background: rgba(255, 255, 255, 0.96); 
       border-radius: 14px; 
@@ -85,6 +108,8 @@
 
     footer { background-color: rgba(15, 23, 42, 0.95); color: #94a3b8; text-align: center; padding: 45px 20px; font-size: 0.95rem; border-top: 4px solid var(--primary); }
     footer strong { color: white; }
+    footer a { color: #60a5fa; text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
     .address-box { margin-bottom: 20px; font-size: 1.1rem; color: #f1f5f9; line-height: 1.8; }
   </style>
 </head>
@@ -94,7 +119,11 @@
     <span class="badge">🚨 24/7 Immediate UK Emergency Dispatch</span>
     <h1>Rapid Rescue & Rubber</h1>
     <p class="hero-sub">Fast Emergency Roadside Recovery, Car Towing & Mobile Tyre Fitting Service. Reaching drivers within 90 minutes across Kent, East Sussex, Essex, and South East London.</p>
-    <a href="tel:+441795904789" class="call-btn">📞 CALL NOW: 01795 904789</a>
+    
+    <div class="btn-group">
+      <a href="tel:+441795904789" class="call-btn">📞 CALL NOW: 01795 904789</a>
+      <a href="https://www.facebook.com/share/1EJNAfCBTJ/" target="_blank" rel="noopener" class="fb-btn">📘 Visit Facebook Page</a>
+    </div>
   </header>
 
   <div class="container">
@@ -159,7 +188,8 @@
     <div class="address-box">
       <strong>Rapid Rescue & Rubber</strong><br>
       Ospringe, Faversham, ME13 0RN, United Kingdom<br>
-      Emergency Contact Line: <strong>01795 904789</strong>
+      Emergency Contact Line: <strong>01795 904789</strong><br>
+      Follow us: <a href="https://www.facebook.com/share/1EJNAfCBTJ/" target="_blank" rel="noopener">Official Facebook Page</a>
     </div>
     <p>&copy; Rapid Rescue & Rubber. All rights reserved. 24/7 Emergency Mobile Tyre Fitting, Puncture Repair & Road Recovery Towing Service.</p>
   </footer>
