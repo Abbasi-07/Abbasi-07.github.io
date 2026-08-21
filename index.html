@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapid Rescue & Rubber | 24/7 Roadside Assistance & Mobile Tyre Fitting UK</title>
-  <meta name="description" content="24/7 Emergency mobile tyre replacement, puncture repairs, and rapid road recovery towing service in the UK. Call Rapid Rescue & Rubber for fast roadside assistance.">
+  <title>24/7 Mobile Tyre Fitting & Emergency Breakdown Towing Kent | Rapid Rescue & Rubber</title>
+  <meta name="description" content="24/7 Emergency mobile tyre replacement, locking wheel nut removal, roadside puncture repair, jump starts, and rapid breakdown recovery towing in Faversham, Sittingbourne, Canterbury, Maidstone, Medway, Ashford, Thanet, London, and across Kent & M2/M20/M25. Call 01795 904789!">
+  <meta name="keywords" content="mobile tyre fitting near me, emergency tyre repair Kent, 24 hour breakdown recovery, car towing Faversham, Sittingbourne mobile tyres, Canterbury breakdown towing, M2 recovery truck, M20 flat tyre service, locking wheel nut removal, roadside battery jump start">
   <style>
     :root {
       --primary: #d32f2f;
-      --secondary: #111827;
+      --secondary: #0f172a;
       --accent: #16a34a;
-      --light: #f9fafb;
+      --light: #f8fafc;
     }
     
     body {
@@ -18,104 +19,147 @@
       margin: 0;
       padding: 0;
       background-color: var(--light);
-      color: #1f2937;
+      color: #1e293b;
       line-height: 1.6;
     }
 
-    /* Hero Section */
+    /* Full Hero Header with Recovery Truck & Tyre Van Backdrop */
     header {
-      background: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), #111827;
+      position: relative;
+      background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.92)),
+                  url('https://images.unsplash.com/photo-1562920851-8935c10fa2e8?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
       color: white;
-      padding: 50px 20px;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      border-bottom: 5px solid var(--primary);
+      padding: 50px 20px;
+      border-bottom: 6px solid var(--primary);
     }
 
     .badge {
       background-color: var(--primary);
       color: white;
-      padding: 6px 14px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      border-radius: 30px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+      box-shadow: 0 2px 8px rgba(211, 47, 47, 0.4);
     }
 
-    h1 { margin: 15px 0 10px 0; font-size: 2.5rem; }
-    p.hero-sub { font-size: 1.2rem; color: #d1d5db; max-width: 600px; margin: 0 auto 25px auto; }
+    h1 { margin: 20px 0 10px 0; font-size: 3.2rem; font-weight: 900; text-shadow: 0 3px 6px rgba(0,0,0,0.7); }
+    p.hero-sub { font-size: 1.35rem; color: #e2e8f0; max-width: 800px; margin: 0 auto 30px auto; text-shadow: 0 2px 4px rgba(0,0,0,0.7); }
     
     .call-btn {
       display: inline-block;
-      padding: 18px 36px;
+      padding: 22px 45px;
       background-color: var(--accent);
       color: white;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 800;
       text-decoration: none;
       border-radius: 50px;
-      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
-      transition: transform 0.2s;
+      box-shadow: 0 6px 20px rgba(22, 163, 74, 0.6);
+      transition: transform 0.2s, background-color 0.2s;
     }
 
-    .call-btn:hover { transform: scale(1.03); }
+    .call-btn:hover { transform: scale(1.05); background-color: #15803d; }
 
-    /* Layout & Cards */
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .card { background: white; border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 14px; padding: 35px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .service-box { background: #f3f4f6; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary); }
-    .service-box h3 { margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .service-box { background: #f1f5f9; padding: 22px; border-radius: 10px; border-left: 5px solid var(--primary); }
+    .service-box h3 { margin-top: 0; color: #0f172a; font-size: 1.25rem; }
 
-    footer { text-align: center; padding: 20px; color: #6b7280; font-size: 0.9rem; }
+    .tag-group { margin-bottom: 20px; }
+    .tag-group h3 { font-size: 1.1rem; color: #334155; margin-bottom: 10px; }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background-color: #e2e8f0; color: #1e293b; padding: 6px 12px; border-radius: 20px; font-weight: 600; font-size: 0.88rem; }
+
+    footer { background-color: var(--secondary); color: #94a3b8; text-align: center; padding: 45px 20px; font-size: 0.95rem; }
+    footer strong { color: white; }
+    .address-box { margin-bottom: 20px; font-size: 1.1rem; color: #f1f5f9; line-height: 1.8; }
   </style>
 </head>
 <body>
 
   <header>
-    <span class="badge">🚨 24/7 UK Emergency Assistance</span>
+    <span class="badge">🚨 24/7 Immediate UK Emergency Dispatch</span>
     <h1>Rapid Rescue & Rubber</h1>
-    <p class="hero-sub">Rapid Road Towing & Emergency Mobile Tyre Service. We reach you wherever you are stranded.</p>
-    <!-- Replace the phone number below with your client's UK telephone number -->
-    <a href="tel:+441795904789" class="call-btn">📞 CALL NOW: 01795904789</a>
+    <p class="hero-sub">Fast Emergency Roadside Recovery, Car Towing & Mobile Tyre Fitting Service. Reaching drivers within 90 minutes across Kent, East Sussex, Essex, and South East London.</p>
+    <a href="tel:+441795904789" class="call-btn">📞 CALL NOW: 01795 904789</a>
   </header>
 
   <div class="container">
     <div class="card">
-      <h2>Emergency Roadside Services</h2>
+      <h2>24 Hour Emergency Roadside & Tyre Services</h2>
       <div class="grid">
         <div class="service-box">
-          <h3>🏎️ Mobile Tyre Replacement</h3>
-          <p>Same-day and emergency roadside tyre fitting for all car types and commercial vans.</p>
+          <h3>🛞 Emergency Mobile Tyre Fitting</h3>
+          <p>Roadside blowout replacement, home driveway tyre fitting, commercial van tyre fitting, 4x4 tyres, and locking wheel nut removal.</p>
         </div>
         <div class="service-box">
-          <h3>🚚 Rapid Road Towing</h3>
-          <p>Fast breakdown recovery towing service to get your vehicle to safety or a local garage.</p>
+          <h3>🚚 Rapid Road Breakdown Towing</h3>
+          <p>24/7 accident recovery towing, motorway breakdown recovery, vehicle transport, car recovery truck dispatch, and winch recovery.</p>
         </div>
         <div class="service-box">
-          <h3>🛠️ On-Site Puncture Repair</h3>
-          <p>Safe roadside tyre repairs to get you back on the road quickly without a towing fee.</p>
+          <h3>🛠️ On-Site Puncture Repairs</h3>
+          <p>Fast mobile puncture repairs, tubeless tyre sealing, bead seal repairs, and mobile wheel balancing performed directly at your location.</p>
         </div>
         <div class="service-box">
-          <h3>🔋 Jump Start & Recovery</h3>
-          <p>Dead battery breakdown recovery and emergency power boosts at the roadside.</p>
+          <h3>🔋 Battery Jump Start & Replacement</h3>
+          <p>Dead car battery boosts, 12V battery testing, alternator failure breakdown assistance, and emergency fuel delivery.</p>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <h2>Why Drivers Choose Rapid Rescue & Rubber</h2>
+      <h2>Complete Coverage Area (Within 1.5-Hour Service Radius)</h2>
+      
+      <div class="tag-group">
+        <h3>📍 Local Kent Towns & Cities</h3>
+        <div class="area-tags">
+          <span class="tag">Faversham & Ospringe</span><span class="tag">Sittingbourne</span><span class="tag">Canterbury</span><span class="tag">Whitstable</span><span class="tag">Herne Bay</span><span class="tag">Sheerness & Isle of Sheppey</span><span class="tag">Maidstone</span><span class="tag">Medway (Chatham, Gillingham, Rochester, Rainham, Strood)</span><span class="tag">Ashford</span><span class="tag">Thanet (Margate, Ramsgate, Broadstairs)</span><span class="tag">Dover & Folkestone</span><span class="tag">Gravesend</span><span class="tag">Dartford</span><span class="tag">Tonbridge</span><span class="tag">Royal Tunbridge Wells</span><span class="tag">Sevenoaks</span><span class="tag">Deal & Sandwich</span>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3>🛣️ Major Highways & Trunk Routes Covered</h3>
+        <div class="area-tags">
+          <span class="tag">M2 Motorway</span><span class="tag">M20 Motorway</span><span class="tag">M25 Motorway (Junctions 1-6)</span><span class="tag">M26 Motorway</span><span class="tag">A2 Dual Carriageway</span><span class="tag">A20 Route</span><span class="tag">A249 Corridor</span><span class="tag">A299 Thanet Way</span><span class="tag">A28 Route</span><span class="tag">Dartford Crossing (A282)</span>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3>📍 Extended Service Areas (Within 90 Mins)</h3>
+        <div class="area-tags">
+          <span class="tag">South East London (Bexley, Bromley, Orpington, Greenwich)</span><span class="tag">South Essex (Thurrock, Grays, Basildon, Southend-on-Sea)</span><span class="tag">East Sussex (Rye, Hastings, Crowborough)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Why Drivers Call Rapid Rescue & Rubber</h2>
       <ul>
-        <li><strong>Rapid Arrival:</strong> Priority dispatch across UK local routes and highways.</li>
-        <li><strong>24/7 Availability:</strong> Day, night, weekends, and bank holidays.</li>
-        <li><strong>Fully Equipped Vans:</strong> Mobile tyre mounting and recovery tools on board.</li>
+        <li><strong>Rapid 30-90 Minute Arrival:</strong> Priority emergency response to all roadside incidents.</li>
+        <li><strong>Fully Equipped Service Fleet:</strong> Mobile tyre mounting machines, high-capacity jacks, and heavy-duty recovery winches on board.</li>
+        <li><strong>24/7/365 Availability:</strong> Open all night, weekends, and bank holidays for fast roadside aid.</li>
       </ul>
     </div>
   </div>
 
   <footer>
-    <p>&copy; Rapid Rescue & Rubber. All rights reserved. Emergency Road Recovery & Mobile Tyre Service in the UK.</p>
+    <div class="address-box">
+      <strong>Rapid Rescue & Rubber</strong><br>
+      Ospringe, Faversham, ME13 0RN, United Kingdom<br>
+      Emergency Contact Line: <strong>01795 904789</strong>
+    </div>
+    <p>&copy; Rapid Rescue & Rubber. All rights reserved. 24/7 Emergency Mobile Tyre Fitting, Puncture Repair & Road Recovery Towing Service.</p>
   </footer>
 
 </body>
